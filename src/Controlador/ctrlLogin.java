@@ -1,14 +1,12 @@
 package Controlador;
 
-import Controlador.ctrlLogin;
-import Modelo.Usuario;
 
 import Modelo.Usuario;
 import Vista.jfrLogin;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JOptionPane;
-import Vista.jfrRegistro.initjfrRegistro();
+
 
 public class ctrlLogin implements MouseListener {
     // 1-Llamar a las otras capas

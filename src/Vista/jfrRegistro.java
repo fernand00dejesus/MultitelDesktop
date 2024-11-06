@@ -1,6 +1,9 @@
 
 package Vista;
 
+import Controlador.ctrlRegistro;
+import Modelo.Usuario;
+
 public class jfrRegistro extends javax.swing.JFrame {
 
     /**
@@ -8,8 +11,16 @@ public class jfrRegistro extends javax.swing.JFrame {
      */
     public jfrRegistro() {
         initComponents();
+        this.setLocationRelativeTo(this);
     }
-
+    
+    public static void initjfrRegistro(){
+        Usuario modelo = new Usuario();
+        jfrRegistro vista = new jfrRegistro();
+        ctrlRegistro controlador = new ctrlRegistro(modelo, vista);
+        
+        vista.setVisible(true);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -29,7 +40,7 @@ public class jfrRegistro extends javax.swing.JFrame {
         txtCorreo = new javax.swing.JTextField();
         pswUsuario = new javax.swing.JPasswordField();
         btnRegistrarme = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnIrLogin = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -70,9 +81,9 @@ public class jfrRegistro extends javax.swing.JFrame {
 
         pswUsuario.setText("jPasswordField1");
 
-        btnRegistrarme.setText("jButton1");
+        btnRegistrarme.setText("Registrarme");
 
-        jButton2.setText("jButton2");
+        btnIrLogin.setText("Inicar sesion");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -100,7 +111,7 @@ public class jfrRegistro extends javax.swing.JFrame {
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(btnRegistrarme)
                                     .addComponent(pswUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton2))))))
+                                    .addComponent(btnIrLogin))))))
                 .addContainerGap(570, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -123,7 +134,7 @@ public class jfrRegistro extends javax.swing.JFrame {
                 .addGap(39, 39, 39)
                 .addComponent(btnRegistrarme)
                 .addGap(30, 30, 30)
-                .addComponent(jButton2)
+                .addComponent(btnIrLogin)
                 .addContainerGap(186, Short.MAX_VALUE))
         );
 
@@ -172,8 +183,8 @@ public class jfrRegistro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JButton btnIrLogin;
     public javax.swing.JButton btnRegistrarme;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;

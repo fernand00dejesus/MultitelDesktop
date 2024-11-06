@@ -1,6 +1,8 @@
 
 package Vista;
 
+import Controlador.ctrlLogin;
+import Modelo.Usuario;
 
 public class jfrLogin extends javax.swing.JFrame {
 
@@ -12,7 +14,7 @@ public class jfrLogin extends javax.swing.JFrame {
     
     public static void initjfrLogin(){
         Usuario modelo = new Usuario();
-        frmLogin vista = new frmLogin();
+        jfrLogin vista = new jfrLogin();
         ctrlLogin controlador = new ctrlLogin(modelo, vista);
         
         vista.setVisible(true);

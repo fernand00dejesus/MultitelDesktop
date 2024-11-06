@@ -17,8 +17,8 @@ public class ctrlRegistro implements MouseListener{
         this.modelo = Modelo;
         this.vista = Vista;
         
-        vista.btnRegistrar.addMouseListener(this);
-        vista.btnIrALogin.addMouseListener(this);
+        vista.btnRegistrarme.addMouseListener(this);
+        vista.btnIrLogin.addMouseListener(this);
     }
     
 
@@ -28,7 +28,10 @@ public class ctrlRegistro implements MouseListener{
         if(e.getSource() == vista.btnRegistrarme){
             modelo.setNombre(vista.txtNombre.getText());
             modelo.setCorreo(vista.txtCorreo.getText());
-            modelo.setContraseña(modelo.convertirSHA256(vista.txtContraseña.getText()));
+            String password = new String(vista.pswUsuario.getPassword());
+
+            modelo.setContraseña(modelo.convertirSHA256(password));
+
             
             modelo.GuardarUsuario();
             
@@ -37,8 +40,8 @@ public class ctrlRegistro implements MouseListener{
         }
         
          //Clic al botón de Ir Al Login
-        if(e.getSource() == vista.btnIrALogin){
-            Vista.frmLogin.initFrmLogin();
+        if(e.getSource() == vista.btnIrLogin){
+            Vista.jfrLogin.initjfrLogin();
             vista.dispose();
         }
         
