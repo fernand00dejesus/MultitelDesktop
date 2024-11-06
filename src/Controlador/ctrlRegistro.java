@@ -17,7 +17,7 @@ public class ctrlRegistro implements MouseListener{
         this.modelo = Modelo;
         this.vista = Vista;
         
-        vista.btnRegistrarme.addMouseListener(this);
+        vista.btnRegistrar.addMouseListener(this);
         vista.btnIrALogin.addMouseListener(this);
     }
     

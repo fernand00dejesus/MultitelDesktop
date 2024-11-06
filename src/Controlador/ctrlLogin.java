@@ -1,5 +1,8 @@
 package Controlador;
 
+import Controlador.ctrlLogin;
+import Modelo.Usuario;
+
 import Modelo.Usuario;
 import Vista.jfrLogin;
 import java.awt.event.MouseEvent;
@@ -25,8 +28,12 @@ public class ctrlLogin implements MouseListener {
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getSource() == vista.btnIngresar) { // Botón Ingresar
-            modelo.setCorreo(vista.txtUsuario.getText());
-            modelo.setContraseña(modelo.convertirSHA256(new String(vista.pswUsuario.getPassword())));
+          // Obtener el correo del campo de texto
+modelo.setCorreo(vista.txtUsuario.getText());
+
+// Obtener la contraseña en texto plano y luego convertirla a SHA-256
+String password = new String(vista.pswUsuario.getPassword()); // Convertir char[] a String
+modelo.setContraseña(modelo.convertirSHA256(password));
 
             // Variable para verificar el resultado de iniciar sesión
             boolean comprobar = modelo.iniciarSesion();
