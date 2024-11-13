@@ -198,7 +198,6 @@ public class jfrLogin extends javax.swing.JFrame {
 
         txtUsuario.setBackground(new java.awt.Color(204, 204, 204));
         txtUsuario.setFont(new java.awt.Font("Roboto Light", 0, 12)); // NOI18N
-        txtUsuario.setText("Ingrese su nombre de Usuario");
         txtUsuario.setBorder(null);
         txtUsuario.setName(""); // NOI18N
         txtUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -222,7 +221,7 @@ public class jfrLogin extends javax.swing.JFrame {
 
         pswUsuario.setBackground(new java.awt.Color(204, 204, 204));
         pswUsuario.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        pswUsuario.setText("jPasswordField1");
+        pswUsuario.setText("********");
         pswUsuario.setBorder(null);
         pswUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -331,7 +330,7 @@ public class jfrLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     private void txtUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsuarioMousePressed
-     if (txtUsuario.getText().equals("Ingrese su Usuario")){
+     if (txtUsuario.getText().equals("Ingrese su nombre de Usuario")){
          txtUsuario.setText("");
          txtUsuario.setForeground(Color.black);
     }
