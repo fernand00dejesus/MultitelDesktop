@@ -3,6 +3,7 @@ package Vista;
 
 import Controlador.ctrlLogin;
 import Modelo.Usuario;
+import java.awt.Color;
 
 public class jfrLogin extends javax.swing.JFrame {
 
@@ -200,6 +201,11 @@ public class jfrLogin extends javax.swing.JFrame {
         txtUsuario.setText("Ingrese su nombre de Usuario");
         txtUsuario.setBorder(null);
         txtUsuario.setName(""); // NOI18N
+        txtUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtUsuarioMousePressed(evt);
+            }
+        });
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
@@ -218,6 +224,11 @@ public class jfrLogin extends javax.swing.JFrame {
         pswUsuario.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
         pswUsuario.setText("jPasswordField1");
         pswUsuario.setBorder(null);
+        pswUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                pswUsuarioMousePressed(evt);
+            }
+        });
 
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -318,6 +329,33 @@ public class jfrLogin extends javax.swing.JFrame {
     private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnIngresarActionPerformed
+
+    private void txtUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsuarioMousePressed
+     if (txtUsuario.getText().equals("Ingrese su Usuario")){
+         txtUsuario.setText("");
+         txtUsuario.setForeground(Color.black);
+    }
+
+    if (String.valueOf(pswUsuario.getPassword()).isEmpty()){
+    pswUsuario.setText("********");
+    pswUsuario.setForeground(Color.gray);
+
+    
+
+    }
+    }//GEN-LAST:event_txtUsuarioMousePressed
+
+    private void pswUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pswUsuarioMousePressed
+    if (String.valueOf(pswUsuario.getPassword()).equals("********")){
+        pswUsuario.setText("");
+        pswUsuario.setForeground(Color.BLACK);
+      }
+      if (txtUsuario.getText(). isEmpty()){
+      txtUsuario.setText("Ingrese su nombre de Usuario");
+     txtUsuario.setForeground(Color.gray);
+
+    }
+    }//GEN-LAST:event_pswUsuarioMousePressed
 
     /**
      * @param args the command line arguments
