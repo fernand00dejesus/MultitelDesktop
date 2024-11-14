@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package Vista;
 
-/**
- *
- * @author Multitel
- */
+
 public class jfrMenuPrincipal extends javax.swing.JFrame {
 
     /**
@@ -29,20 +23,20 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jPanel6 = new javax.swing.JPanel();
+        btnVehiculo = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
-        jPanel7 = new javax.swing.JPanel();
+        btnCombustible = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel8 = new javax.swing.JPanel();
+        btnEmpleado = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
+        btnKilometraje = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
+        btnMantenimiento = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
@@ -58,9 +52,10 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(0, 204, 0));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel6.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel6.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel6.setPreferredSize(new java.awt.Dimension(390, 101));
+        btnVehiculo.setBackground(new java.awt.Color(204, 204, 204));
+        btnVehiculo.setForeground(new java.awt.Color(255, 255, 255));
+        btnVehiculo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnVehiculo.setPreferredSize(new java.awt.Dimension(390, 101));
 
         jLabel3.setFont(new java.awt.Font("Rockwell", 0, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -68,31 +63,32 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/9055266_bxs_car_icon.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnVehiculoLayout = new javax.swing.GroupLayout(btnVehiculo);
+        btnVehiculo.setLayout(btnVehiculoLayout);
+        btnVehiculoLayout.setHorizontalGroup(
+            btnVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnVehiculoLayout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(jLabel11)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 90, Short.MAX_VALUE)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
+        btnVehiculoLayout.setVerticalGroup(
+            btnVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnVehiculoLayout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(btnVehiculoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel11)
                     .addComponent(jLabel3))
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 170, 390, -1));
+        jPanel2.add(btnVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 170, 400, -1));
 
-        jPanel7.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel7.setPreferredSize(new java.awt.Dimension(390, 100));
+        btnCombustible.setBackground(new java.awt.Color(204, 204, 204));
+        btnCombustible.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCombustible.setPreferredSize(new java.awt.Dimension(390, 100));
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Rockwell", 0, 48)); // NOI18N
@@ -101,35 +97,36 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/3737606_charger_charging_station_tesla_electric_icon.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnCombustibleLayout = new javax.swing.GroupLayout(btnCombustible);
+        btnCombustible.setLayout(btnCombustibleLayout);
+        btnCombustibleLayout.setHorizontalGroup(
+            btnCombustibleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnCombustibleLayout.createSequentialGroup()
                 .addContainerGap(31, Short.MAX_VALUE)
                 .addComponent(jLabel8)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel4)
                 .addContainerGap())
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel7Layout.createSequentialGroup()
+        btnCombustibleLayout.setVerticalGroup(
+            btnCombustibleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnCombustibleLayout.createSequentialGroup()
                 .addContainerGap(26, Short.MAX_VALUE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(btnCombustibleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
                     .addComponent(jLabel4))
                 .addGap(17, 17, 17))
         );
 
-        jPanel2.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, -1, -1));
+        jPanel2.add(btnCombustible, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 520, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/LogoMultitel.png"))); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 0, 390, -1));
 
-        jPanel8.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel8.setMinimumSize(new java.awt.Dimension(390, 100));
-        jPanel8.setPreferredSize(new java.awt.Dimension(390, 101));
+        btnEmpleado.setBackground(new java.awt.Color(204, 204, 204));
+        btnEmpleado.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEmpleado.setMinimumSize(new java.awt.Dimension(390, 100));
+        btnEmpleado.setPreferredSize(new java.awt.Dimension(390, 101));
 
         jLabel5.setFont(new java.awt.Font("Rockwell", 0, 48)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -137,30 +134,31 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
 
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/8666609_user_icon.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
-        jPanel8.setLayout(jPanel8Layout);
-        jPanel8Layout.setHorizontalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnEmpleadoLayout = new javax.swing.GroupLayout(btnEmpleado);
+        btnEmpleado.setLayout(btnEmpleadoLayout);
+        btnEmpleadoLayout.setHorizontalGroup(
+            btnEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnEmpleadoLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addContainerGap())
         );
-        jPanel8Layout.setVerticalGroup(
-            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel8Layout.createSequentialGroup()
+        btnEmpleadoLayout.setVerticalGroup(
+            btnEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnEmpleadoLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(btnEmpleadoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel10)
                     .addComponent(jLabel5))
                 .addContainerGap(24, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 690, -1, -1));
+        jPanel2.add(btnEmpleado, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 690, -1, -1));
 
-        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
+        btnKilometraje.setBackground(new java.awt.Color(204, 204, 204));
+        btnKilometraje.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Rockwell", 0, 48)); // NOI18N
@@ -169,31 +167,32 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/3737607_car_electric_electrocar_tesla_electro car_icon.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnKilometrajeLayout = new javax.swing.GroupLayout(btnKilometraje);
+        btnKilometraje.setLayout(btnKilometrajeLayout);
+        btnKilometrajeLayout.setHorizontalGroup(
+            btnKilometrajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnKilometrajeLayout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
+        btnKilometrajeLayout.setVerticalGroup(
+            btnKilometrajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnKilometrajeLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(btnKilometrajeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel7)
                     .addComponent(jLabel2))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 390, -1));
+        jPanel2.add(btnKilometraje, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 350, 390, -1));
 
-        jPanel9.setBackground(new java.awt.Color(204, 204, 204));
-        jPanel9.setMinimumSize(new java.awt.Dimension(390, 100));
+        btnMantenimiento.setBackground(new java.awt.Color(204, 204, 204));
+        btnMantenimiento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnMantenimiento.setMinimumSize(new java.awt.Dimension(390, 100));
 
         jLabel6.setFont(new java.awt.Font("Rockwell", 0, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -201,28 +200,28 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
 
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/8541731_car_crash_icon.png"))); // NOI18N
 
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+        javax.swing.GroupLayout btnMantenimientoLayout = new javax.swing.GroupLayout(btnMantenimiento);
+        btnMantenimiento.setLayout(btnMantenimientoLayout);
+        btnMantenimientoLayout.setHorizontalGroup(
+            btnMantenimientoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, btnMantenimientoLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addComponent(jLabel9)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addContainerGap())
         );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel9Layout.createSequentialGroup()
+        btnMantenimientoLayout.setVerticalGroup(
+            btnMantenimientoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnMantenimientoLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(btnMantenimientoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel9)
                     .addComponent(jLabel6))
                 .addContainerGap(31, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 850, 380, -1));
+        jPanel2.add(btnMantenimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 850, 390, -1));
 
         jPanel10.setBackground(new java.awt.Color(0, 153, 0));
         jPanel10.setForeground(new java.awt.Color(255, 255, 255));
@@ -324,6 +323,11 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel btnCombustible;
+    private javax.swing.JPanel btnEmpleado;
+    private javax.swing.JPanel btnKilometraje;
+    private javax.swing.JPanel btnMantenimiento;
+    private javax.swing.JPanel btnVehiculo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -340,10 +344,5 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     // End of variables declaration//GEN-END:variables
 }
