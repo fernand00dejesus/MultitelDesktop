@@ -1,6 +1,8 @@
 
 package Vista;
 
+import Controlador.ctrlMenuPrincipal;
+
 
 public class jfrMenuPrincipal extends javax.swing.JFrame {
 
@@ -10,7 +12,13 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
     public jfrMenuPrincipal() {
         initComponents();
     }
-
+public static void initjfrMenuPrincipal(){
+        jfrMenuPrincipal vista = new jfrMenuPrincipal();
+        PanelVehiculo1 panel = new PanelVehiculo1();
+        ctrlMenuPrincipal controlador = new ctrlMenuPrincipal(vista,panel);
+        
+        vista.setVisible(true);
+    } 
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -40,7 +48,7 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        jpContenedor = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -239,14 +247,14 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
 
         jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 30, 1150));
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout jpContenedorLayout = new javax.swing.GroupLayout(jpContenedor);
+        jpContenedor.setLayout(jpContenedorLayout);
+        jpContenedorLayout.setHorizontalGroup(
+            jpContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 2527, Short.MAX_VALUE)
         );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        jpContenedorLayout.setVerticalGroup(
+            jpContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
@@ -257,14 +265,14 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 405, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jpContenedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jpContenedor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -290,7 +298,7 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
+     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -317,17 +325,18 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new jfrMenuPrincipal().setVisible(true);
+                
+               initjfrMenuPrincipal();
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel btnCombustible;
-    private javax.swing.JPanel btnEmpleado;
-    private javax.swing.JPanel btnKilometraje;
-    private javax.swing.JPanel btnMantenimiento;
-    private javax.swing.JPanel btnVehiculo;
+    public javax.swing.JPanel btnCombustible;
+    public javax.swing.JPanel btnEmpleado;
+    public javax.swing.JPanel btnKilometraje;
+    public javax.swing.JPanel btnMantenimiento;
+    public javax.swing.JPanel btnVehiculo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -343,6 +352,6 @@ public class jfrMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
+    public javax.swing.JPanel jpContenedor;
     // End of variables declaration//GEN-END:variables
 }
