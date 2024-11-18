@@ -247,16 +247,7 @@ public static void initjfrMenuPrincipal(){
 
         jPanel2.add(jPanel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 30, 1150));
 
-        javax.swing.GroupLayout jpContenedorLayout = new javax.swing.GroupLayout(jpContenedor);
-        jpContenedor.setLayout(jpContenedorLayout);
-        jpContenedorLayout.setHorizontalGroup(
-            jpContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 2527, Short.MAX_VALUE)
-        );
-        jpContenedorLayout.setVerticalGroup(
-            jpContenedorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
+        jpContenedor.setLayout(new java.awt.BorderLayout());
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);

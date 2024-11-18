@@ -2,14 +2,14 @@ package Controlador;
 
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import javax.swing.JPanel;
+
 import Vista.jfrMenuPrincipal;
 import Vista.PanelCombustible3;
 import Vista.PanelVehiculo1;
 import Vista.PanelKilometraje2;
 import Vista.PanelEmpleado4;
 import Vista.PanelMantenimiento5;
-import javax.swing.JOptionPane;
+
 
 
 
@@ -18,6 +18,7 @@ public class ctrlMenuPrincipal implements MouseListener{
     // Referencias a la vista principal y sus paneles
     private jfrMenuPrincipal vista;
     private PanelVehiculo1 Panel;
+    
     
     
     
@@ -84,20 +85,21 @@ public class ctrlMenuPrincipal implements MouseListener{
             vista.jpContenedor.repaint();
         }
         
+          
         if(e.getSource() == vista.btnMantenimiento){
-            PanelMantemiento5 objRojo2 = new PanelMantenimiento5();
+            PanelMantenimiento5 objAmarillo3 = new PanelMantenimiento5();
             
             vista.jpContenedor.removeAll();
-            vista.jpContenedor.add(objRojo2);
+            vista.jpContenedor.add(objAmarillo3);
             
             vista.jpContenedor.revalidate();
             vista.jpContenedor.repaint();
-             //Aqui no me encuentra el btnMensaje
         }
         
+               
          }
         
-        
+
     
     @Override
     public void mousePressed(MouseEvent e) {
