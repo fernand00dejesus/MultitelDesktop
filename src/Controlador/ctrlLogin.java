@@ -1,12 +1,19 @@
 package Controlador;
 
-
+import Controlador.ctrlMenuPrincipal;
 import Modelo.Usuario;
 import Vista.jfrLogin;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JOptionPane;
+import Vista.jfrMenuPrincipal;
 
+import Vista.jfrMenuPrincipal;
+import Vista.PanelCombustible3;
+import Vista.PanelVehiculo1;
+import Vista.PanelKilometraje2;
+import Vista.PanelEmpleado4;
+import Vista.PanelMantenimiento5;
 
 public class ctrlLogin implements MouseListener {
     // 1-Llamar a las otras capas
@@ -38,6 +45,21 @@ modelo.setContraseña(modelo.convertirSHA256(password));
 
             if (comprobar) {
                 JOptionPane.showMessageDialog(vista, "Usuario existe, ¡Bienvenido!");
+                //quiero que se inicie otra pantalla 
+                // Abrir la ventana principal
+            jfrMenuPrincipal menuPrincipal = new jfrMenuPrincipal();
+            menuPrincipal.setVisible(true);
+            
+              // Inicializar el controlador del menú principal
+            PanelVehiculo1 panelVehiculo = new PanelVehiculo1(); // O cualquier otro panel que necesites
+            ctrlMenuPrincipal controladorMenu = new ctrlMenuPrincipal(menuPrincipal, panelVehiculo);
+
+            
+            
+
+            // Cerrar la ventana de login
+            vista.dispose();
+                
             } else {
                 JOptionPane.showMessageDialog(vista, "Usuario no encontrado");
             }
@@ -49,6 +71,9 @@ modelo.setContraseña(modelo.convertirSHA256(password));
             vista.dispose();
         }
     }
+    //Creo una variable llamada "comprobar" 
+            //que guardará el resultado de ejecutar el metodo iniciarSesion()            
+            
 
     @Override
     public void mousePressed(MouseEvent e) { }

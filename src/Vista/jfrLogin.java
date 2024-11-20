@@ -224,7 +224,6 @@ public class jfrLogin extends javax.swing.JFrame {
 
         pswUsuario.setBackground(new java.awt.Color(204, 204, 204));
         pswUsuario.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
-        pswUsuario.setText("********");
         pswUsuario.setBorder(null);
         pswUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -333,30 +332,12 @@ public class jfrLogin extends javax.swing.JFrame {
     }//GEN-LAST:event_btnIngresarActionPerformed
 
     private void txtUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtUsuarioMousePressed
-     if (txtUsuario.getText().equals("Ingrese su nombre de Usuario")){
-         txtUsuario.setText("");
-         txtUsuario.setForeground(Color.black);
-    }
-
-    if (String.valueOf(pswUsuario.getPassword()).isEmpty()){
-    pswUsuario.setText("********");
-    pswUsuario.setForeground(Color.gray);
-
-    
-
-    }
+ 
+      
     }//GEN-LAST:event_txtUsuarioMousePressed
 
     private void pswUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pswUsuarioMousePressed
-    if (String.valueOf(pswUsuario.getPassword()).equals("********")){
-        pswUsuario.setText("");
-        pswUsuario.setForeground(Color.BLACK);
-      }
-      if (txtUsuario.getText(). isEmpty()){
-      txtUsuario.setText("Ingrese su nombre de Usuario");
-     txtUsuario.setForeground(Color.gray);
-
-    }
+    
     }//GEN-LAST:event_pswUsuarioMousePressed
 
     /**
