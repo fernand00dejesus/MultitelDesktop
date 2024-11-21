@@ -33,26 +33,26 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
+        txtMatricula = new javax.swing.JTextField();
+        txtProyecto = new javax.swing.JTextField();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
+        txtModelo = new javax.swing.JTextField();
+        txtEstado = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
+        txtMarca = new javax.swing.JTextField();
+        txtTipo = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        ComboBoxDepartamento = new javax.swing.JComboBox<>();
+        ComboBoxPais = new javax.swing.JComboBox<>();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tablaVehiculo = new javax.swing.JTable();
         jLabel11 = new javax.swing.JLabel();
 
         setPreferredSize(new java.awt.Dimension(2527, 1159));
@@ -69,42 +69,45 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesPaneles/Diseño sin título.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 290));
 
-        jButton1.setBackground(new java.awt.Color(51, 102, 255));
+        jButton1.setBackground(new java.awt.Color(53, 233, 250));
         jButton1.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Agregar");
         jButton1.setBorder(null);
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 140, 40));
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 150, 50));
 
-        jButton2.setBackground(new java.awt.Color(51, 102, 255));
+        jButton2.setBackground(new java.awt.Color(53, 233, 250));
         jButton2.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Actualizar");
         jButton2.setBorder(null);
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 140, 40));
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 150, 50));
 
-        jButton3.setBackground(new java.awt.Color(51, 102, 255));
+        jButton3.setBackground(new java.awt.Color(53, 233, 250));
         jButton3.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
         jButton3.setText("Eliminar");
         jButton3.setBorder(null);
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 140, 40));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 150, 50));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        txtMatricula.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                txtMatriculaActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 230, -1));
+        jPanel2.add(txtMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 30, 230, -1));
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        txtProyecto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                txtProyectoActionPerformed(evt);
             }
         });
-        jPanel2.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, 150, -1));
+        jPanel2.add(txtProyecto, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 30, 150, -1));
 
         jLabel9.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         jLabel9.setText("Proyecto");
@@ -112,11 +115,9 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
 
         jLabel10.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         jLabel10.setText("Departamento Área");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 100, 220, -1));
-        jPanel2.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 140, 170, -1));
-        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, 170, -1));
-        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 90, 170, -1));
-        jPanel2.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 170, -1));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 130, 220, -1));
+        jPanel2.add(txtModelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, 170, -1));
+        jPanel2.add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 170, -1));
 
         jLabel6.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         jLabel6.setText("Modelo");
@@ -133,8 +134,8 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         jLabel4.setText("Matricula");
         jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
-        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 230, -1));
-        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 230, -1));
+        jPanel2.add(txtMarca, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 230, -1));
+        jPanel2.add(txtTipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 230, -1));
 
         jLabel3.setFont(new java.awt.Font("Roboto Medium", 0, 24)); // NOI18N
         jLabel3.setText("Marca");
@@ -144,15 +145,26 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         jLabel5.setText("Tipo");
         jPanel2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, -1, -1));
 
+        ComboBoxDepartamento.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
+        ComboBoxDepartamento.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Claro proyectos", "Claro ampliacion", "Movistar", "Administracion", "Presidencia", "TH", "Claro Masivo", " " }));
+        ComboBoxDepartamento.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(ComboBoxDepartamento, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 170, 210, 40));
+
+        ComboBoxPais.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        ComboBoxPais.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "EL Salvador", "Nicaragua" }));
+        ComboBoxPais.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
+        jPanel2.add(ComboBoxPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 170, -1));
+
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 1000, 240));
 
-        jPanel3.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel3.setBackground(new java.awt.Color(6, 131, 206));
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 290, 80));
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 390, 160, 170));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 170, 190));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tablaVehiculo.setFont(new java.awt.Font("Roboto Light", 0, 12)); // NOI18N
+        tablaVehiculo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -160,7 +172,7 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
                 "Matricula", "Marca", "Tipo", "Modelo", "País", "Estado", "Proyecto", "Departamento Área"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(tablaVehiculo);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 300, 1040, 660));
 
@@ -171,16 +183,18 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 2530, 1160));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void txtMatriculaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtMatriculaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_txtMatriculaActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void txtProyectoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtProyectoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_txtProyectoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> ComboBoxDepartamento;
+    private javax.swing.JComboBox<String> ComboBoxPais;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -200,14 +214,12 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
-    public javax.swing.JTextField jTextField1;
-    public javax.swing.JTextField jTextField2;
-    public javax.swing.JTextField jTextField3;
-    public javax.swing.JTextField jTextField4;
-    public javax.swing.JTextField jTextField5;
-    public javax.swing.JTextField jTextField6;
-    public javax.swing.JTextField jTextField7;
-    public javax.swing.JTextField jTextField8;
+    public javax.swing.JTable tablaVehiculo;
+    public javax.swing.JTextField txtEstado;
+    public javax.swing.JTextField txtMarca;
+    public javax.swing.JTextField txtMatricula;
+    public javax.swing.JTextField txtModelo;
+    public javax.swing.JTextField txtProyecto;
+    public javax.swing.JTextField txtTipo;
     // End of variables declaration//GEN-END:variables
 }

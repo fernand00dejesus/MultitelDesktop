@@ -67,7 +67,7 @@ public static void initjfrMenuPrincipal(){
 
         jLabel3.setFont(new java.awt.Font("Rockwell", 0, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Vehiculo");
+        jLabel3.setText("Vehículo");
 
         jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/Iconos/9055266_bxs_car_icon.png"))); // NOI18N
 
