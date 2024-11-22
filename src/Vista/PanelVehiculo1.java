@@ -29,9 +29,9 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnAgregarVehiculo = new javax.swing.JButton();
+        btnActualizarVehiculo = new javax.swing.JButton();
+        btnEliminarVehiculo = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         txtMatricula = new javax.swing.JTextField();
         txtProyecto = new javax.swing.JTextField();
@@ -49,6 +49,9 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         ComboBoxDepartamento = new javax.swing.JComboBox<>();
         ComboBoxPais = new javax.swing.JComboBox<>();
+        txtBuscarVehiculo = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        btnLimpiarVehiculos = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -69,29 +72,29 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ImagenesPaneles/Diseño sin título.png"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 290));
 
-        jButton1.setBackground(new java.awt.Color(53, 233, 250));
-        jButton1.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Agregar");
-        jButton1.setBorder(null);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 150, 50));
+        btnAgregarVehiculo.setBackground(new java.awt.Color(53, 233, 250));
+        btnAgregarVehiculo.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
+        btnAgregarVehiculo.setForeground(new java.awt.Color(255, 255, 255));
+        btnAgregarVehiculo.setText("Agregar");
+        btnAgregarVehiculo.setBorder(null);
+        btnAgregarVehiculo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btnAgregarVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 460, 150, 50));
 
-        jButton2.setBackground(new java.awt.Color(53, 233, 250));
-        jButton2.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Actualizar");
-        jButton2.setBorder(null);
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 150, 50));
+        btnActualizarVehiculo.setBackground(new java.awt.Color(53, 233, 250));
+        btnActualizarVehiculo.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
+        btnActualizarVehiculo.setForeground(new java.awt.Color(255, 255, 255));
+        btnActualizarVehiculo.setText("Actualizar");
+        btnActualizarVehiculo.setBorder(null);
+        btnActualizarVehiculo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btnActualizarVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 520, 150, 50));
 
-        jButton3.setBackground(new java.awt.Color(53, 233, 250));
-        jButton3.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Eliminar");
-        jButton3.setBorder(null);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 150, 50));
+        btnEliminarVehiculo.setBackground(new java.awt.Color(53, 233, 250));
+        btnEliminarVehiculo.setFont(new java.awt.Font("Roboto", 0, 24)); // NOI18N
+        btnEliminarVehiculo.setForeground(new java.awt.Color(255, 255, 255));
+        btnEliminarVehiculo.setText("Eliminar");
+        btnEliminarVehiculo.setBorder(null);
+        btnEliminarVehiculo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(btnEliminarVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 580, 150, 50));
 
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -155,7 +158,25 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         ComboBoxPais.setCursor(new java.awt.Cursor(java.awt.Cursor.MOVE_CURSOR));
         jPanel2.add(ComboBoxPais, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, 170, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 1000, 240));
+        txtBuscarVehiculo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBuscarVehiculoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(txtBuscarVehiculo, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 370, -1));
+
+        jLabel12.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jLabel12.setText("Buscar");
+        jPanel2.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, -1));
+
+        btnLimpiarVehiculos.setBackground(new java.awt.Color(51, 51, 255));
+        btnLimpiarVehiculos.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        btnLimpiarVehiculos.setForeground(new java.awt.Color(255, 255, 255));
+        btnLimpiarVehiculos.setText("Limpiar ");
+        btnLimpiarVehiculos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel2.add(btnLimpiarVehiculos, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 210, 110, 40));
+
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 1000, 260));
 
         jPanel3.setBackground(new java.awt.Color(6, 131, 206));
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 290, 80));
@@ -191,16 +212,22 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtProyectoActionPerformed
 
+    private void txtBuscarVehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarVehiculoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBuscarVehiculoActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> ComboBoxDepartamento;
-    private javax.swing.JComboBox<String> ComboBoxPais;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    public javax.swing.JComboBox<String> ComboBoxDepartamento;
+    public javax.swing.JComboBox<String> ComboBoxPais;
+    public javax.swing.JButton btnActualizarVehiculo;
+    public javax.swing.JButton btnAgregarVehiculo;
+    public javax.swing.JButton btnEliminarVehiculo;
+    public javax.swing.JButton btnLimpiarVehiculos;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -215,6 +242,7 @@ public class PanelVehiculo1 extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     public javax.swing.JTable tablaVehiculo;
+    public javax.swing.JTextField txtBuscarVehiculo;
     public javax.swing.JTextField txtEstado;
     public javax.swing.JTextField txtMarca;
     public javax.swing.JTextField txtMatricula;
