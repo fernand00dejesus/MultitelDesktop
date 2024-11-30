@@ -8,14 +8,20 @@
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Vista/jfrLogin.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Controlador/ctrlRegistro.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Controlador/ctrlLogin.java</file>
+            <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Vista/frmIngresoCorreo.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Modelo/mdlVehiculo.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Vista/PanelEmpleado4.java</file>
+            <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Controlador/ctrlIngresoCorreo.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Vista/jfrMenuPrincipal.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Vista/PanelKilometraje2.java</file>
+            <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Modelo/EnviarCorreo.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Controlador/PanelMantemiento5.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Controlador/ctrlMenuPrincipal.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Vista/PanelCombustible3.java</file>
             <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Modelo/Usuario.java</file>
+            <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Modelo/Credenciales.java</file>
+            <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/Controlador/ctrlVehiculo.java</file>
+            <file>file:/C:/Users/Multitel/Desktop/MultitelDesktop/src/multitel/Multitel.java</file>
         </group>
     </open-files>
 </project-private>

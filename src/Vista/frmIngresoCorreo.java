@@ -4,6 +4,9 @@
  */
 package Vista;
 
+import controlador.ctrlIngresoCorreo;
+import modelo.Credenciales;
+
 /**
  *
  * @author Multitel
@@ -13,8 +16,16 @@ public class frmIngresoCorreo extends javax.swing.JFrame {
     /**
      * Creates new form frmIngresoCorreo
      */
-    public frmIngresoCorreo() {
+  public frmIngresoCorreo() {
         initComponents();
+    }
+    
+    public static void initFrmIngresoCorreo(){
+        Credenciales modelo = new Credenciales();
+        frmIngresoCorreo vista = new frmIngresoCorreo();
+        ctrlIngresoCorreo controlador = new ctrlIngresoCorreo(modelo, vista);
+        
+        vista.setVisible(true);
     }
 
     /**
@@ -42,6 +53,11 @@ public class frmIngresoCorreo extends javax.swing.JFrame {
         btnEnviarCodigo.setForeground(new java.awt.Color(255, 255, 255));
         btnEnviarCodigo.setText("Enviar codigo de recuperacion");
         btnEnviarCodigo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEnviarCodigo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEnviarCodigoActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -89,6 +105,10 @@ public class frmIngresoCorreo extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnEnviarCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarCodigoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEnviarCodigoActionPerformed
 
     /**
      * @param args the command line arguments
